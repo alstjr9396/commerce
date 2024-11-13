@@ -8,9 +8,8 @@ services:
         ports:
             - "3306:3306"
 
-    member-service:
-        image: member-service
+    myredis:
+        image: redis:6.2
         ports:
-            - "8081:8080"
-        depends_on:
-            - mysql-server 
+            - "6379:6379"
+    
