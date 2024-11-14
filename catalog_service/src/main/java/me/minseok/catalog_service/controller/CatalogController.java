@@ -40,7 +40,7 @@ public class CatalogController {
         return catalogService.getProductsBySellerId(sellerId);
     }
 
-    @GetMapping("/catalog/products/{productId}/decreaseStockCount")
+    @PostMapping("/catalog/products/{productId}/decreaseStockCount")
     public Product decreaseStockCount(@PathVariable Long productId, @RequestBody DecreaseStockCountDto decreaseStockCountDto) {
         return catalogService.decreaseStockCount(productId, decreaseStockCountDto.getDecreaseCount());
     }

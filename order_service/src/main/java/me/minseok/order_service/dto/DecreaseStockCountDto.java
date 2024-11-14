@@ -11,4 +11,8 @@ public class DecreaseStockCountDto {
     public void setDecreaseCount(Long decreaseCount) {
         this.decreaseCount = decreaseCount;
     }
+
+    public Long getDecreaseCount() {
+        return decreaseCount;
+    }
 }

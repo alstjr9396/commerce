@@ -38,6 +38,6 @@ public class OrderController {
 
     @GetMapping("/order/orders/{orderId}")
     public ProductOrderDetailDto getOrderDetail(@PathVariable Long orderId) {
-        return getOrderDetail(orderId);
+        return orderService.getOrderDetail(orderId);
     }
 }

@@ -33,7 +33,7 @@ public class PaymentController {
                 processPaymentDto.getUserId(),
                 processPaymentDto.getOrderId(),
                 processPaymentDto.getAmountKRW(),
-                processPaymentDto.getPaymentId()
+                processPaymentDto.getPaymentMethodId()
         );
     }
 

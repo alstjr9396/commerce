@@ -8,7 +8,7 @@ public class ProcessPaymentDto {
 
     private Long amountKRW;
 
-    private Long paymentId;
+    private Long paymentMethodId;
 
     public Long getUserId() {
         return userId;
@@ -34,11 +34,11 @@ public class ProcessPaymentDto {
         this.amountKRW = amountKRW;
     }
 
-    public Long getPaymentId() {
-        return paymentId;
+    public Long getPaymentMethodId() {
+        return paymentMethodId;
     }
 
-    public void setPaymentId(Long paymentId) {
-        this.paymentId = paymentId;
+    public void setPaymentMethodId(Long paymentMethodId) {
+        this.paymentMethodId = paymentMethodId;
     }
 }
