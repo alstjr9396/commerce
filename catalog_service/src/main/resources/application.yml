@@ -19,3 +19,17 @@ spring:
     contact-points: cassandra-node-0
     local-datacenter: dc1
     schema-action: create_if_not_exists
+
+  kafka:
+    bootstrap-servers:
+      - kafka1:9092
+      - kafka2:9093
+      - kafka3:9094
+    consumer:
+      group-id: cataloggroup
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer

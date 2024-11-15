@@ -25,16 +25,19 @@ public class ProductOrder {
 
     private Long deliveryId;
 
+    private String deliveryAddress;
+
     public ProductOrder() {
     }
 
-    public ProductOrder(Long userId, Long productId, Long count, OrderStatus orderStatus, Long paymentId, Long deliveryId) {
+    public ProductOrder(Long userId, Long productId, Long count, OrderStatus orderStatus, Long paymentId, Long deliveryId, String deliveryAddress) {
         this.userId = userId;
         this.productId = productId;
         this.count = count;
         this.orderStatus = orderStatus;
         this.paymentId = paymentId;
         this.deliveryId = deliveryId;
+        this.deliveryAddress = deliveryAddress;
     }
 
     public Long getId() {
@@ -87,5 +90,13 @@ public class ProductOrder {
 
     public void setDeliveryId(Long deliveryId) {
         this.deliveryId = deliveryId;
+    }
+
+    public String getDeliveryAddress() {
+        return deliveryAddress;
+    }
+
+    public void setDeliveryAddress(String deliveryAddress) {
+        this.deliveryAddress = deliveryAddress;
     }
 }
